@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>グッドライフ株式会社 | 不動産投資</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+            background-color: #ffffff;
+            color: #333333;
+            line-height: 1.8;
+        }
+
+        header {
+            background-color: #ffffff;
+            border-bottom: 1px solid #e0e0e0;
+            padding: 20px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #1a1a1a;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #555;
+            font-size: 0.9rem;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #0066cc;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            padding: 160px 20px 100px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            color: #1a1a1a;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            color: #666;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        section {
+            padding: 80px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            font-size: 1.8rem;
+            color: #1a1a1a;
+            margin-bottom: 40px;
+            text-align: center;
+            font-weight: 600;
+        }
+
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .service-card {
+            background: #ffffff;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 40px 30px;
+            text-align: center;
+            transition: box-shadow 0.3s;
+        }
+
+        .service-card:hover {
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+        }
+
+        .service-card h3 {
+            font-size: 1.2rem;
+            color: #1a1a1a;
+            margin-bottom: 15px;
+        }
+
+        .service-card p {
+            color: #666;
+            font-size: 0.95rem;
+        }
+
+        .about {
+            background-color: #f8f9fa;
+        }
+
+        .about-content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .about-content p {
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        .contact-section {
+            background-color: #ffffff;
+        }
+
+        .contact-info {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .contact-item {
+            margin-bottom: 25px;
+        }
+
+        .contact-item h4 {
+            font-size: 0.9rem;
+            color: #888;
+            margin-bottom: 8px;
+            font-weight: normal;
+        }
+
+        .contact-item p {
+            font-size: 1.1rem;
+            color: #1a1a1a;
+        }
+
+        footer {
+            background-color: #1a1a1a;
+            color: #ffffff;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        footer p {
+            font-size: 0.85rem;
+            color: #888;
+        }
+
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav ul {
+                gap: 20px;
+            }
+
+            .hero {
+                padding: 140px 20px 80px;
+            }
+
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+
+            section {
+                padding: 60px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">グッドライフ株式会社</div>
+            <nav>
+                <ul>
+                    <li><a href="#services">事業内容</a></li>
+                    <li><a href="#about">会社概要</a></li>
+                    <li><a href="#contact">お問い合わせ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="hero">
+            <h1>確かな不動産投資で、<br>未来の資産を築く</h1>
+            <p>お客様の資産形成を第一に考え、最適な不動産投資のご提案をいたします。</p>
+        </div>
+
+        <section id="services">
+            <h2 class="section-title">事業内容</h2>
+            <div class="services">
+                <div class="service-card">
+                    <h3>投資用不動産の売買</h3>
+                    <p>収益性の高い物件を厳選し、お客様のニーズに合った投資用不動産をご紹介いたします。</p>
+                </div>
+                <div class="service-card">
+                    <h3>資産運用コンサルティング</h3>
+                    <p>長期的な視点で、お客様の資産形成をサポートする最適なプランをご提案いたします。</p>
+                </div>
+                <div class="service-card">
+                    <h3>物件管理サービス</h3>
+                    <p>入居者募集から日常管理まで、オーナー様の負担を軽減するトータルサポートを提供します。</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <h2 class="section-title">会社概要</h2>
+            <div class="about-content">
+                <p>私たちは、お客様の大切な資産を守り、増やすことを使命としています。<br>
+                豊富な経験と専門知識を活かし、信頼されるパートナーとして<br>
+                不動産投資の成功をお手伝いいたします。</p>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <h2 class="section-title">お問い合わせ</h2>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <h4>会社名</h4>
+                    <p>グッドライフ株式会社</p>
+                </div>
+                <div class="contact-item">
+                    <h4>所在地</h4>
+                    <p>〒393-0026 長野県諏訪郡下諏訪町6052</p>
+                </div>
+                <div class="contact-item">
+                    <h4>電話番号</h4>
+                    <p>0266-27-8348</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 グッドライフ株式会社 All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
